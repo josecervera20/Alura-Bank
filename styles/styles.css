@@ -1,6 +1,9 @@
+/* Importa estilos específicos para el encabezado */
 @import url('./header.css');
+/* Importa estilos específicos para el pie de página */
 @import url('./footer.css');
 
+/* Variables CSS para colores y fuentes reutilizables */
 :root {
     --fuente-principal: 'Montserrat', sans-serif;
     --fuente-logo: 'Inter', sans-serif;
@@ -9,12 +12,14 @@
     --white: #FFFFFF;
 }
 
+/* Estilos base para el cuerpo del documento */
 body {
     font-family: var(--fuente-principal);
     color: var(--black);
     font-size: 16px;
 }
 
+/* Estilo para el enlace del logo en el encabezado */
 .encabezado__logo-link {
     text-decoration: none;
 }
