@@ -1,3 +1,4 @@
+/* Estilos para la sección del banner principal */
 .banner {
     background-image: url("../../img/banner_cliente.png");
     background-repeat: no-repeat;
@@ -9,6 +10,7 @@
     justify-content: center;
 }
 
+/* Estilos para los títulos del banner y la sección de cuenta */
 .banner__titulo,
 .cuenta__titulo {
     font-weight: 600;
@@ -17,11 +19,13 @@
     line-height: 39px;
 }
 
+/* Estilos específicos para el título del banner */
 .banner__titulo {
     width: 32%;
     margin: 0 3em
 }
 
+/* Estilos para los títulos de las secciones de servicios y beneficios */
 .servicios__titulo,
 .beneficios__titulo {
     font-size: 28px;
@@ -30,6 +34,7 @@
     margin: 1em 0;
 }
 
+/* Estilos para la lista de servicios */
 .lista-servicios {
     display: flex;
     flex-wrap: wrap;
@@ -37,6 +42,7 @@
     margin: 4em 0;
 }
 
+/* Estilos para el título de cada ítem de servicio */
 .item-servicios__titulo {
     background-color: var(--black);
     color: var(--white);
@@ -47,10 +53,12 @@
     border-radius: 0px 0px 20px 20px;
 }
 
+/* Estilos para la imagen de cada ítem de servicio */
 .item-servicios__imagen {
     display: block;
 }
 
+/* Estilos para la sección de cuenta */
 .cuenta {
     background-image: url("../../img/banner_gato.png");
     background-repeat: no-repeat;
@@ -62,11 +70,13 @@
     align-items: center;
 }
 
+/* Estilos para el contenedor dentro de la sección de cuenta */
 .cuenta__container {
     width: 80%;
     margin-left: 4em;
 }
 
+/* Estilos para el botón de la sección de cuenta */
 .cuenta__boton {
     display: block;
     margin-top: .5em;
@@ -82,6 +92,7 @@
     padding: 0.5em;
 }
 
+/* Estilos para la lista de beneficios */
 .beneficios-lista {
     display: flex;
     justify-content: space-around;
@@ -90,10 +101,12 @@
     text-align: center;
 }
 
+/* Estilos para cada ítem de la lista de beneficios */
 .beneficios-lista__item {
     width: 20%;
 }
 
+/* Estilos base para los iconos de beneficios */
 .beneficios__icono {
     width: 80px;
     height: 80px;
@@ -102,22 +115,27 @@
     display: inline-block;
 }
 
+/* Imagen de fondo para el icono de "presente" */
 .icono-presente {
     background-image: url('../../img/presente.png');
 }
 
+/* Imagen de fondo para el icono de "retiro" */
 .icono-retiro {
     background-image: url('../../img/retiro.png');
 }
 
+/* Imagen de fondo para el icono de "estrella" */
 .icono-estrella {
     background-image: url('../../img/estrella.png')
 }
 
+/* Imagen de fondo para el icono de "gato" (seguro Pet) */
 .icono-gato {
     background-image: url('../../img/gato.png')
 }
 
+/* Estilos para el título de cada beneficio */
 .beneficios-lista__titulo {
     font-weight: 600;
     font-size: 20px;
@@ -126,21 +144,26 @@
     margin: .5em 0;
 }
 
+/* Media query para pantallas con ancho máximo de 798px (diseño responsivo) */
 @media screen and (max-width: 798px) {
+
+    /* Ajustes para la lista de beneficios en pantallas pequeñas */
     .beneficios-lista {
         display: block;
         margin: 1em;
     }
 
+    /* Ajustes para cada ítem de beneficio en pantallas pequeñas */
     .beneficios-lista__item {
         width: 100%;
     }
 
+    /* Ajustes para la sección de cuenta en pantallas pequeñas */
     .cuenta {
         display: block;
-
     }
 
+    /* Ajustes para el título de la sección de cuenta en pantallas pequeñas */
     .cuenta__titulo {
         padding: 1em 0;
     }
