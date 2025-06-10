@@ -1,3 +1,4 @@
+/* Estilos para el contenedor principal del pie de página */
 .pie_pagina {
     display: flex;
     justify-content: space-around;
@@ -6,22 +7,26 @@
     padding: 3em 0;
 }
 
+/* Estilos para la lista de iconos de redes sociales */
 .redes-sociales__lista {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Estilos para los títulos de las secciones del pie de página */
 .pie_pagina__titulo {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
 }
 
+/* Margen para cada elemento de la lista del pie de página */
 .pie_pagina__lista li {
     margin: 1em 0;
 }
 
+/* Estilos para los enlaces en el pie de página */
 .pie_pagina__link {
     font-weight: 400;
     font-size: 16px;
@@ -30,22 +35,28 @@
     color: var(--white);
 }
 
+/* Estilos para el logo "AluraBank" en el pie de página */
 .pie_pagina__logo {
     margin-top: .6em;
     font-size: 28px;
     line-height: 36px;
 }
 
+/* Estilos para la parte en negritas del logo en el pie de página */
 .pie_pagina__logo--negrito {
     font-weight: 700;
 }
 
+/* Media query para pantallas con ancho máximo de 798px (diseño responsivo) */
 @media screen and (max-width: 798px) {
+
+    /* Ajustes para el contenedor principal del pie de página en pantallas pequeñas */
     .pie_pagina {
         display: block;
         padding: 1em;
     }
 
+    /* Ajustes para la lista de redes sociales en pantallas pequeñas */
     .redes-sociales__lista {
         display: block;
     }
