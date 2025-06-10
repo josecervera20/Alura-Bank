@@ -1,3 +1,4 @@
+/* Estilos para la sección del banner en los formularios */
 .banner {
     background-image: url("../../img/banner_formulario.png");
     background-repeat: no-repeat;
@@ -10,7 +11,7 @@
     text-align: center;
 }
 
-
+/* Estilos para el título del banner en los formularios */
 .banner__titulo {
     font-weight: 600;
     color: var(--white);
@@ -20,40 +21,48 @@
     margin: 0 auto;
 }
 
+/* Estilos para el contenedor principal de los formularios */
 .container {
     margin: 2em 5em;
 }
 
+/* Estilos para el formulario en sí */
 .formulario {
     margin: 3em auto;
     width: 30vw;
 }
 
+/* Estilos para los elementos de las migas de pan (breadcrumb) */
 .breadcrumb li {
     display: inline;
     font-size: 16px;
     color: var(--azul-claro);
 }
 
+/* Separador para los elementos de las migas de pan */
 .breadcrumb li+li:before {
     padding: 8px;
     color: var(--azul-claro);
     content: ">";
 }
 
+/* Estilos para la página actual en las migas de pan */
 .breadcrumb__pagina {
     font-weight: 700;
 }
 
+/* Contenedor principal dentro del formulario */
 .formulario__container {
     margin: 3em 0;
     text-align: center;
 }
 
+/* Estilos para cada grupo de campo del formulario */
 .formulario__campo {
     margin-bottom: 2em;
 }
 
+/* Estilos para los títulos de texto dentro del formulario */
 .formulario__titulo-texto {
     margin: 1em 0;
     font-weight: 600;
@@ -61,11 +70,13 @@
     line-height: 34px;
 }
 
+/* Estilos para las etiquetas de los campos del formulario */
 .campo__etiqueta {
     font-weight: 500;
     line-height: 20px;
 }
 
+/* Estilos para los campos de entrada completos del formulario */
 .campo__completo {
     display: block;
     border: 2px solid var(--azul-claro);
@@ -73,18 +84,20 @@
     width: 100%;
     padding: 1em;
     margin-top: .5em;
-
 }
 
+/* Modificador para campos de entrada más pequeños */
 .campo__completo--menor {
     width: 50%;
 }
 
+/* Estilos para el texto de los términos y condiciones */
 .terminos__texto {
     line-height: 20px;
     display: inline;
 }
 
+/* Estilos comunes para los botones del formulario y la cámara */
 .formulario__boton,
 .camera__boton {
     background: var(--azul-claro);
@@ -99,32 +112,39 @@
     color: var(--white);
 }
 
+/* Estilos para imágenes dentro de los formularios */
 .formulario__imagen {
     display: block;
     margin: 2em auto;
 }
 
+/* Estilo para ocultar imágenes (visualmente) */
 .formulario__imagen--invisivel {
     display: none;
 }
 
+/* Estilo para botones de formulario que actúan como enlaces */
 .formulario__boton--enlace {
     text-decoration: none;
     width: 50%;
 }
 
+/* Estilos para texto general dentro de los formularios */
 .formulario__texto {
     margin: 1em 8em;
 }
 
+/* Modificador para texto en negrita dentro de los formularios */
 .formulario__texto--negrito {
     font-weight: 700;
 }
 
+/* Estilos para texto secundario en los formularios */
 .formulario__texto-secundario {
     margin: 2em 6em;
 }
 
+/* Estilos para mensajes de error de validación */
 .mensaje-error {
     display: block;
     margin-top: 5px;
@@ -134,33 +154,42 @@
     color: red;
 }
 
+/* Estilo para campos de entrada con error de validación */
 .campo__completo--error {
     border: 2px solid red;
 }
 
+/* Estilos para ocultar los contenedores de mensaje y cámara por defecto */
 .formulario__mensaje,
 .formulario__camera {
     display: none;
 }
 
+/* Estilos para mostrar el mensaje de éxito o la cámara */
 .formulario__mensaje--exito,
 .formulario__camera--mostrar {
     display: block;
 }
 
+/* Media query para pantallas con ancho máximo de 900px (diseño responsivo) */
 @media screen and (max-width: 900px) {
+
+    /* Ajustes del ancho del formulario en pantallas pequeñas */
     .formulario {
         width: 70%;
     }
 
+    /* Ajustes del ancho de las imágenes de etapas en pantallas pequeñas */
     .formulario__etapas {
         width: 100%;
     }
 
+    /* Ajustes del margen del texto en pantallas pequeñas */
     .formulario__texto {
         margin: 0;
     }
 
+    /* Ajustes del margen del contenedor principal en pantallas pequeñas */
     .container {
         margin: 2em;
     }
