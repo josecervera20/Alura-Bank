@@ -69,22 +69,60 @@
     color: var(--white);
 }
 
-/* Media query para pantallas con ancho máximo de 900px (diseño responsivo) */
-@media screen and (max-width: 900px) {
-
-    /* Ajustes de margen para el encabezado en pantallas pequeñas */
+/* Media Queries para Tablets (768px)*/
+@media screen and (max-width: 768px) {
     .encabezado {
-        margin: 2em;
+        margin: 1.5em 0.5em;
+        justify-content: space-between;
     }
 
-    /* Oculta la barra de búsqueda y los enlaces de navegación en pantallas pequeñas */
-    .encabezado__buscar,
-    .encabezado-lista__link {
+    .encabezado-lista {
+        flex-basis: auto;
+        margin: 0;
+        justify-content: flex-end;
+        gap: 0.5em;
+    }
+
+    /* Oculta los ítems de navegación "Sobre" y "Servicios" */
+    .encabezado-lista__item:nth-child(1),
+    .encabezado-lista__item:nth-child(2) {
         display: none;
     }
 
-    /* Hace visibles los botones en pantallas pequeñas */
+    /* Oculta la barra de búsqueda */
+    .encabezado__buscar {
+        display: none;
+    }
+
+    /* Ajusta el tamaño de los botones para tablets  */
     .encabezado-lista__item-boton {
-        display: block;
+        font-size: 16px;
+        padding: 0.4em 0.8em;/
+    }
+}
+
+/* Media Queries para Móviles (480px)  */
+@media screen and (max-width: 480px) {
+    .encabezado {
+        margin: 1em 0.5em;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .encabezado__logo-inicio {
+        font-size: 24px;
+    }
+
+    .encabezado-lista {
+        width: 100%;
+        justify-content: center;
+        gap: 0.8em;
+        margin-top: 0.5em;
+    }
+
+    .encabezado-lista__item-boton {
+        font-size: 14px;
+        padding: 0.3em 0.6em;
     }
 }
