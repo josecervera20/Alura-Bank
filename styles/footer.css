@@ -47,17 +47,87 @@
     font-weight: 700;
 }
 
-/* Media query para pantallas con ancho máximo de 798px (diseño responsivo) */
-@media screen and (max-width: 798px) {
-
-    /* Ajustes para el contenedor principal del pie de página en pantallas pequeñas */
+/* Media Queries para Tablets (768px) */
+@media screen and (max-width: 768px) {
     .pie_pagina {
-        display: block;
-        padding: 1em;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 2em 1em;
+        gap: 2em 0;
     }
 
-    /* Ajustes para la lista de redes sociales en pantallas pequeñas */
+    .pie_pagina>*:not(.pie_pagina__logo) {
+        width: 48%;
+        margin-bottom: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
     .redes-sociales__lista {
-        display: block;
+        display: flex;
+        justify-content: center;
+        gap: 1.5em;
+        width: 100%;
+    }
+
+    .pie_pagina>*:last-child .pie_pagina__titulo {
+        text-align: center;
+    }
+
+    .pie_pagina__titulo {
+        font-size: 16px;
+    }
+
+    .pie_pagina__link {
+        font-size: 14px;
+    }
+
+    .pie_pagina__logo {
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+        margin-top: .6em;
+        order: 99;
+    }
+}
+
+/* Media Queries para Móviles (480px) */
+@media screen and (max-width: 480px) {
+    .pie_pagina {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5em 0.5em;
+        text-align: center;
+    }
+
+    .pie_pagina>*:not(.redes-sociales__lista):not(.pie_pagina__logo) {
+        width: 90%;
+        margin-bottom: 1em;
+    }
+
+    .redes-sociales__lista {
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+        gap: 1.2em;
+    }
+
+    .pie_pagina__titulo {
+        font-size: 14px;
+        margin-bottom: 0.5em;
+    }
+
+    .pie_pagina__lista li {
+        margin: 0.5em 0;
+    }
+
+    .pie_pagina__link {
+        font-size: 12px;
+    }
+
+    .pie_pagina__logo {
+        font-size: 20px;
+        margin-top: 0.5em;
     }
 }
