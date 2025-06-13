@@ -174,23 +174,150 @@
 /* Media query para pantallas con ancho máximo de 900px (diseño responsivo) */
 @media screen and (max-width: 900px) {
 
-    /* Ajustes del ancho del formulario en pantallas pequeñas */
+    .banner {
+        height: 20vh;
+    }
+
+    .banner__titulo {
+        font-size: 28px;
+        width: 60%;
+    }
+
     .formulario {
         width: 70%;
     }
 
-    /* Ajustes del ancho de las imágenes de etapas en pantallas pequeñas */
     .formulario__etapas {
         width: 100%;
     }
 
-    /* Ajustes del margen del texto en pantallas pequeñas */
     .formulario__texto {
         margin: 0;
     }
 
-    /* Ajustes del margen del contenedor principal en pantallas pequeñas */
     .container {
         margin: 2em;
+    }
+}
+
+/* Media Queries para Móviles (480px y menores) */
+@media screen and (max-width: 480px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-size: 12px;
+        overflow-x: hidden;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .banner {
+        height: 15vh;
+        padding: 0 1em;
+        width: 100%;
+        margin: 0;
+    }
+
+    .banner__titulo {
+        font-size: 18px;
+        width: 90%;
+        line-height: 1.3;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .container {
+        margin: 0;
+        padding: 1em 1em;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .formulario {
+        width: 100%;
+        margin: 1.5em auto;
+        padding: 0 0.5em;
+        min-width: 0;
+    }
+
+    .breadcrumb li {
+        font-size: 11px;
+    }
+
+    .breadcrumb li+li:before {
+        padding: 4px;
+    }
+
+    .formulario__titulo-texto {
+        font-size: 18px;
+        line-height: 1.3;
+        margin: 1.5em 0 1em;
+        padding: 0;
+    }
+
+    .campo__etiqueta {
+        font-size: 14px;
+        text-align: left;
+        display: block;
+        margin-bottom: 0.3em;
+    }
+
+    .campo__completo {
+        padding: 0.8em;
+        margin-bottom: 1em;
+    }
+
+    .campo__completo--menor {
+        width: 80%;
+        margin: 0.5em 0;
+        margin-bottom: 1em;
+        display: block;
+    }
+
+    .terminos__texto {
+        font-size: 13px;
+        line-height: 1.4;
+        padding: 0 0.5em;
+    }
+
+    .formulario__boton,
+    .camera__boton {
+        padding: 0.7em 1.5em;
+        font-size: 14px;
+        width: 90%;
+        max-width: 220px;
+        margin: 1.5em auto;
+    }
+
+    .formulario__boton--enlace {
+        width: 90%;
+        max-width: 220px;
+    }
+
+    .formulario__imagen {
+        width: 90%;
+        max-width: 150px;
+        margin: 1.5em auto;
+    }
+
+    .formulario__texto {
+        margin: 1em 0.8em;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .formulario__texto-secundario {
+        margin: 1.5em 0.8em;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .mensaje-error {
+        font-size: 0.8rem;
+        text-align: left;
+        margin-left: 0.5em;
     }
 }
