@@ -144,27 +144,189 @@
     margin: .5em 0;
 }
 
-/* Media query para pantallas con ancho máximo de 798px (diseño responsivo) */
-@media screen and (max-width: 798px) {
-
-    /* Ajustes para la lista de beneficios en pantallas pequeñas */
-    .beneficios-lista {
-        display: block;
-        margin: 1em;
+/* Media Queries para Tablets (768px) */
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 40vh;
     }
 
-    /* Ajustes para cada ítem de beneficio en pantallas pequeñas */
+    .banner__titulo {
+        font-size: 28px;
+        width: 50%;
+        margin: 0 2em;
+    }
+
+    .servicios__titulo,
+    .beneficios__titulo {
+        font-size: 24px;
+        margin: 0.8em 0;
+    }
+
+    .lista-servicios {
+        margin: 2em 0;
+    }
+
+    .item-servicios {
+        width: 45%;
+        margin-bottom: 2em;
+    }
+
+    .item-servicios__imagen {
+        width: 100%;
+        height: auto;
+    }
+
+    .item-servicios__titulo {
+        font-size: 20px;
+    }
+
+    .cuenta {
+        height: 50vh;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cuenta__container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .cuenta__titulo {
+        font-size: 28px;
+    }
+
+    .cuenta__boton {
+        width: 60%;
+        margin: 1em auto;
+        font-size: 16px;
+    }
+
+    .beneficios-lista {
+        flex-wrap: wrap;
+        margin: 2em;
+        justify-content: space-around;
+        gap: 1em;
+    }
+
     .beneficios-lista__item {
+        width: 45%;
+        margin-bottom: 1.5em;
+    }
+
+    .beneficios__icono {
+        width: 60px;
+        height: 60px;
+    }
+
+    .beneficios-lista__titulo {
+        font-size: 18px;
+    }
+}
+
+/* Media Queries para Móviles (480px) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .banner {
+        height: 20vh;
+        padding: 0 0.5em;
+    }
+
+    .banner__titulo {
+        font-size: 16px;
+        width: 100%;
+        line-height: 1.2;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .servicios__titulo,
+    .beneficios__titulo {
+        font-size: 15px;
+        margin: 1.5em 0 1em;
+        padding: 0 0.5em;
+    }
+
+    .lista-servicios {
+        margin: 1.5em 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+        padding: 0 0.5em;
+    }
+
+    .item-servicios {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .item-servicios__titulo {
+        font-size: 13px;
+    }
+
+    /* Cuenta Section */
+    .cuenta {
+        height: 30vh;
+        padding: 2em 0.8em;
+    }
+
+    .cuenta__container {
         width: 100%;
     }
 
-    /* Ajustes para la sección de cuenta en pantallas pequeñas */
-    .cuenta {
-        display: block;
+    .cuenta__titulo {
+        font-size: 18px;
+        margin-bottom: 0.8em;
+        line-height: 1.2;
     }
 
-    /* Ajustes para el título de la sección de cuenta en pantallas pequeñas */
-    .cuenta__titulo {
-        padding: 1em 0;
+    .cuenta__boton {
+        width: 90%;
+        max-width: 160px;
+        margin: 1.2em auto;
+        font-size: 11px;
+        padding: 0.6em 0.8em;
+    }
+
+    .beneficios-lista {
+        flex-direction: column;
+        align-items: center;
+        margin: 1.5em 0.8em;
+        gap: 1.5em;
+        padding: 0 0.8em;
+    }
+
+    .beneficios-lista__item {
+        width: 100%;
+        max-width: 220px;
+        text-align: center;
+    }
+
+    .beneficios__icono {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 0.5em;
+    }
+
+    .beneficios-lista__titulo {
+        font-size: 13px;
+        margin: 0.4em 0;
+    }
+
+    .beneficios-lista__item p {
+        font-size: 10px;
+        padding: 0 0.5em;
+        line-height: 1.3;
     }
 }
